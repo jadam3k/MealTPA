@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.jadamek'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    // Nie próbujemy pobierać starych snapshotów Spigot
+}
+
+dependencies {
+    // Wskazujemy lokalny spigot-1.8.8.jar z BuildTools
+    compileOnly files('/home/boss/Dokumenty/Plugins/spigot-1.8.8.jar')
+}
+
+def targetJavaVersion = 8
+java {
+    def javaVersion = JavaVersion.toVersion(targetJavaVersion)
+    sourceCompatibility = javaVersion
+    targetCompatibility = javaVersion
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+processResources {
+    def props = [version: version]
+    inputs.properties props
+    filteringCharset 'UTF-8'
+    filesMatching('plugin.yml') {
+        expand props
+    }
+}

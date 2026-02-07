@@ -1,0 +1,17 @@
+name: MealTPA
+version: 1.0
+main: org.jadamek.mealtpa.MealTPA
+api-version: 1.8.8
+commands:
+  mealtpa:
+    description: Sends request
+    usage: /mealtpa <user>
+  tpaccept:
+    description: Accepts Request
+    usage: /tpaccept
+  mealshop:
+    description: opens shop
+    usage: /mealshop
+  mealbot:
+    description: summons npc
+    usage: /mealbot
