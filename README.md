@@ -17,6 +17,7 @@ It’s built for **Minecraft 1.8** in Java, and makes teleportation feel like a 
 - /mealtpa <user> sends request for teleportation
 - /mealshop - shows shop gui
 - /mealbot - teleports bot to you ( be carefull it can stay on fire)
+- /tpaccept <user> command for accepting teleportation request
 
 
 ---
