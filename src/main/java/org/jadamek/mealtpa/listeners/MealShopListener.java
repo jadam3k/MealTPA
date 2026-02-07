@@ -74,7 +74,7 @@ public class MealShopListener  implements Listener {
     private ItemStack createTeleportTotem() {
         ItemStack totem = new ItemStack(Material.ROTTEN_FLESH); // idk why it but ok
         ItemMeta meta = totem.getItemMeta();
-        meta.setDisplayName(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + "Test teleportation totem");
+        meta.setDisplayName(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + "teleportation totem");
         meta.setLore(Arrays.asList(
                 ChatColor.GRAY + "Mystical totem allowing to teleport",
                 ChatColor.YELLOW + "Use /mealtpa <user> to teleport"
