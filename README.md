@@ -13,6 +13,12 @@ It’s built for **Minecraft 1.8** in Java, and makes teleportation feel like a 
 - **Unknown Seller NPC** – a mysterious merchant who opens the shop GUI when clicked, no commands needed.  
 
 
+## How to use
+- /mealtpa <user> sends request for teleportation
+- /mealshop - shows shop gui
+- /mealbot - teleports bot to you ( be carefull it can stay on fire)
+
+
 ---
 
 ## Screenshots 
