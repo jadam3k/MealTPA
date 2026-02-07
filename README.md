@@ -31,6 +31,3 @@ Want to tweak something, add new items, or improve the GUI? Fork the repo and su
 
 ---
 
-## License
-
-MIT License
